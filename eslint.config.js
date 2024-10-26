@@ -10,10 +10,10 @@ export default [
         languageOptions: {
             sourceType: 'module',
             ecmaVersion: 2022,
-            env: {
-                node: true,
-                es6: true,
-            },
+        },
+        env: {
+            node: true,
+            es6: true,
         },
         rules: {
             ...jsdoc.configs['flat/recommended'].rules,
