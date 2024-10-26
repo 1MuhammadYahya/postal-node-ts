@@ -1,6 +1,6 @@
 import Client from './client';
-import SendMessage from './send-message';
-import SendRawMessage from './send-raw-message';
+import SendMessage from './messages/send-message';
+import SendRawMessage from './messages/send-raw-message';
 
 /**
  * Exports the Client, SendMessage, and SendRawMessage modules.

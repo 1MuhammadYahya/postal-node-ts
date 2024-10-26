@@ -1,5 +1,5 @@
 // index.d.ts
-declare module '@atech/postal' {
+declare module '@yahoo_warraich/postal' {
     export class Client {
         constructor(host: string, serverKey: string);
         makeRequest(controller: string, action: string, parameters: any): Promise<any>;

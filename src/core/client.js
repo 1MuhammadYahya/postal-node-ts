@@ -1,5 +1,3 @@
-import concatStream from 'concat-stream';
-
 /**
  * Represents a Client that interacts with a server via HTTPS.
  */
