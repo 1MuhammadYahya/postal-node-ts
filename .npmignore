@@ -1,0 +1,12 @@
+.git/
+node_modules/
+test/
+coverage/
+.github/
+.gitignore
+.npmrc
+.env
+*.log
+.DS_Store
+.idea/
+.vscode/
