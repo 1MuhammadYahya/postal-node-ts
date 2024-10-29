@@ -4,22 +4,21 @@
 class Message {
     /**
      * Create a new Message instance.
-     *
-     * @param {Object} client - The client instance associated with this message.
-     * @param {Object} attributes - The attributes of the message.
+     * @param {object} client - The client instance associated with this message.
+     * @param {object} attributes - The attributes of the message.
      * @param {string} attributes.id - The unique identifier of the message.
      * @param {string} attributes.token - The token related to the message.
      */
     constructor(client, attributes) {
         /**
          * The client instance.
-         * @type {Object}
+         * @type {object}
          */
         this.client = client;
 
         /**
          * The attributes of the message.
-         * @type {Object}
+         * @type {object}
          * @property {string} id - The unique identifier of the message.
          * @property {string} token - The token associated with the message.
          */
@@ -28,7 +27,6 @@ class Message {
 
     /**
      * Gets the ID of the message.
-     *
      * @returns {string} The message ID.
      */
     id() {
@@ -37,7 +35,6 @@ class Message {
 
     /**
      * Gets the token associated with the message.
-     *
      * @returns {string} The message token.
      */
     token() {

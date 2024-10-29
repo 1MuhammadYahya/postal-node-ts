@@ -6,27 +6,26 @@ import Message from './message';
 class SendResult {
     /**
      * Creates a new SendResult instance.
-     *
-     * @param {Object} client - The client instance associated with the sending result.
-     * @param {Object} result - The result data from sending messages.
-     * @param {Object[]} result.messages - An array of message objects containing information about the sent messages.
+     * @param {object} client - The client instance associated with the sending result.
+     * @param {object} result - The result data from sending messages.
+     * @param {object[]} result.messages - An array of message objects containing information about the sent messages.
      */
     constructor(client, result) {
         /**
          * The client instance.
-         * @type {Object}
+         * @type {object}
          */
         this.client = client;
 
         /**
          * The result data from sending messages.
-         * @type {Object}
+         * @type {object}
          */
         this.result = result;
 
         /**
          * The cache of recipient messages, populated when `recipients()` is called.
-         * @type {Object|null}
+         * @type {object|null}
          * @private
          */
         this._recipients = null;
@@ -34,8 +33,7 @@ class SendResult {
 
     /**
      * Retrieves the recipients' messages, creating a new Message instance for each.
-     *
-     * @returns {Object} An object where each key is the lowercase recipient name, and the value is a Message instance.
+     * @returns {object} An object where each key is the lowercase recipient name, and the value is a Message instance.
      */
     recipients() {
         if (!this._recipients) {
@@ -54,7 +52,6 @@ class SendResult {
 
     /**
      * Returns the number of recipients.
-     *
      * @returns {number} The number of recipients.
      */
     size() {

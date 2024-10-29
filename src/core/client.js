@@ -4,7 +4,6 @@
 class Client {
     /**
      * Creates a new Client instance.
-     *
      * @param {string} host - The host URL of the server.
      * @param {string} serverKey - The API key to authenticate the client.
      */
@@ -24,11 +23,10 @@ class Client {
 
     /**
      * Makes an HTTPS request to the server's API.
-     *
      * @param {string} controller - The API controller.
      * @param {string} action - The action to perform.
-     * @param {Object} parameters - The parameters to send in the request.
-     * @returns {Promise<Object>} A promise that resolves with the server's response data or rejects with an error.
+     * @param {object} parameters - The parameters to send in the request.
+     * @returns {Promise<object>} A promise that resolves with the server's response data or rejects with an error.
      */
     async makeRequest(controller, action, parameters) {
         try {

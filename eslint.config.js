@@ -10,13 +10,19 @@ export default [
         languageOptions: {
             sourceType: 'module',
             ecmaVersion: 2022,
-        },
-        env: {
-            node: true,
-            es6: true,
+            parserOptions: {
+                ecmaVersion: 2022,
+            },
+            globals: {
+                node: true,
+                es6: true,
+                fetch: true,
+                Buffer: true,
+                Object: true,
+            }
         },
         rules: {
-            ...jsdoc.configs['flat/recommended'].rules,
+            ...jsdoc.configs.recommended.rules,
             'jsdoc/check-alignment': 'error',
             'jsdoc/check-param-names': 'error',
             'jsdoc/check-tag-names': 'error',

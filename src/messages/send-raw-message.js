@@ -6,26 +6,24 @@ import SendResult from './SendResult';
 class SendRawMessage {
     /**
      * Creates a new SendRawMessage instance.
-     *
-     * @param {Object} client - The client instance used to send the message.
+     * @param {object} client - The client instance used to send the message.
      */
     constructor(client) {
         /**
          * The attributes for the raw message.
-         * @type {Object}
+         * @type {object}
          */
         this.attributes = {};
 
         /**
          * The client instance.
-         * @type {Object}
+         * @type {object}
          */
         this.client = client;
     }
 
     /**
      * Sets the sender's email address.
-     *
      * @param {string} address - The sender's email address.
      */
     mailFrom(address) {
@@ -34,7 +32,6 @@ class SendRawMessage {
 
     /**
      * Adds a recipient email address.
-     *
      * @param {string} address - The recipient's email address.
      */
     rcptTo(address) {
@@ -46,7 +43,6 @@ class SendRawMessage {
 
     /**
      * Sets the content of the message, encoding it as base64.
-     *
      * @param {string} content - The raw content of the message.
      */
     data(content) {
@@ -55,7 +51,6 @@ class SendRawMessage {
 
     /**
      * Sends the raw message using the client.
-     *
      * @returns {Promise<SendResult>} A promise that resolves with a SendResult instance.
      */
     async send() {
