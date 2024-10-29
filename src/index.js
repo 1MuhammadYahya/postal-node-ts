@@ -1,4 +1,4 @@
-import Client from './client';
+import Client from './core/client';
 import SendMessage from './messages/send-message';
 import SendRawMessage from './messages/send-raw-message';
 
