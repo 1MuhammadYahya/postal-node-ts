@@ -1,6 +1,6 @@
 {
   "name": "@yahoo_warraich/postal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Modern ES Module version of @atech/postal with TypeScript support",
   "type": "module",
   "main": "./src/index.js",
