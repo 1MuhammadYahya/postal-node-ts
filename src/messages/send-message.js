@@ -1,4 +1,4 @@
-import SendResult from './SendResult';
+import SendResult from './send-result';
 
 /**
  * Represents a message that can be sent via the client.
